@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+# Windows 95 React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A nostalgic Windows 95-themed portfolio built with React, TypeScript, and CSS. This interactive app mimics the classic Windows 95 UI, complete with draggable windows, a start menu, and desktop icons.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Fully Interactive Windows 95 UI – Open, close, minimize, and drag windows.
+✅ Start Menu – Classic-style menu with app shortcuts.
+✅ Desktop Icons – Clickable icons for projects, resume, and contact info.
+✅ File Explorer – Browse "files" (projects) in a Windows 95-style window.
+✅ Responsive Design – Works on desktop & tablet.
+✅ TypeScript Support – Strongly typed React components.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React 18 (Functional Components + Hooks)
+TypeScript – Type-safe code
+Styled-Components / CSS Modules – Retro UI styling
+Framer Motion – Smooth window animations
+React DnD – Draggable windows
+Vite – Fast development build
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Clone the repo:
+git clone https://github.com/your-username/windows95-portfolio.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Install dependencies:
+cd windows95-portfolio && npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run the dev server:
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Open in browser:
+→ http://localhost:3000
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Made with ❤️ and nostalgia.
