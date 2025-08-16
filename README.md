@@ -14,19 +14,24 @@ A nostalgic Windows 95-themed portfolio built with React, TypeScript, and CSS. T
 ## Technologies Used
 
 React 18 (Functional Components + Hooks)
+
 TypeScript – Type-safe code
+
 Styled-Components / CSS Modules – Retro UI styling
+
 Framer Motion – Smooth window animations
+
 React DnD – Draggable windows
+
 Vite – Fast development build
 
 ## Installation
 
 Clone the repo:
-git clone https://github.com/your-username/windows95-portfolio.git
+git clone https://github.com/EslaMahgoub/portfolio-windows95.git
 
 Install dependencies:
-cd windows95-portfolio && npm install
+cd portfolio-windows95 && npm install
 
 Run the dev server:
 npm run dev
